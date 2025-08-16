@@ -14,24 +14,13 @@ class NotificationAccessViewController: UIViewController {
     @IBAction func nextAction(_ sender: UIButton) {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound,.badge]){ accessed, error in
             //shart haye zir baraye in hast ke agar karbar taeeid nakard chekar konim
-            if accessed{
-                UserDefaults.isAcceptNotification = true
-                UserDefaults.isShowNotification = true
-                DispatchQueue.main.async{
-                    self.presentOnboarding()
-                }
-            }else{
-                UserDefaults.isShowNotification = true
-                DispatchQueue.main.async{
-                    self.presentOnboarding()
-                }
-                print("kir")
-            }
-          
-            
-            
-            
-            
+            UserDefaults.isShowNotification = true
+            DispatchQueue.main.async{
+               self.presentOnboarding()
+            }                                                                                      
+            // if accessed {
+            // }else{
+            // }
         }
         UIApplication.shared.registerForRemoteNotifications()
     }
