@@ -1,0 +1,17 @@
+/* 
+  Farsi.strings
+  ToDo List
+
+  Created by alios on 5/14/1404 AP.
+  
+*/
+"ok" = "باشه";
+"version-*" = "ورژن %@";
+"next" = "بعدی";
+"settings" = "تنظیمات";
+"home" = "خانه";
+"no-tasks" = "موردی برای انجام وجود ندارد ";
+"title" = "عنوان";
+"continue" = "ادامه";
+"pending-tasks" = "کار های باقی مانده";
+"done-tasks" = "کار های انجام شده";
