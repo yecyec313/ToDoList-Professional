@@ -17,9 +17,7 @@ class HomeViewController: UIViewController {
 //        TaskEntityInAppDataBase.instanceTaskEntity.clearAllTaskEntity()
         doneTasks = AppDatabase.instance.managedObjectDoneToTaskDataModel()
         pendingTasks = AppDatabase.instance.managedObjectToTaskDataModel()
-        tableView.semanticContentAttribute = UserDefaults.language == .english ? .forceLeftToRight : .forceRightToLeft
-        print(AppDatabase.instance.managedObjectToTaskDataModel())
-        
+        tableView.semanticContentAttribute = UserDefaults.language == .english ? .forceLeftToRight : .forceRightToLeft        
         calculateState()
         addBarButtonItem()
         
